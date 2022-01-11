@@ -1,5 +1,7 @@
 {
   "item.tutorial.ruby": "루비",
 
-  "block.tutorial.ruby_ore": "루비 광석"
+  "block.tutorial.ruby_ore": "루비 광석",
+
+  "itemGroup.tutorial.ruby": "루비 모드"
 }
