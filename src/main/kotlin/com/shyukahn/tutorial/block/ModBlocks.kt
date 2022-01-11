@@ -13,6 +13,7 @@ import net.minecraft.util.registry.Registry
 object ModBlocks {
 
     private val RUBY_ORE = Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool())
+    private val RUBY_BLOCK = Block(FabricBlockSettings.of(Material.STONE).strength(6.0f).requiresTool())
 
     private fun registerBlock(name: String, block: Block) {
         registerBlockItem(name, block)
@@ -28,5 +29,6 @@ object ModBlocks {
         println("Registering Mod Blocks for " + Tutorial.MOD_ID)
 
         registerBlock("ruby_ore", RUBY_ORE)
+        registerBlock("ruby_block", RUBY_BLOCK)
     }
 }
