@@ -1,6 +1,7 @@
 package com.shyukahn.tutorial.block
 
 import com.shyukahn.tutorial.Tutorial
+import com.shyukahn.tutorial.block.custom.StatusBlock
 import com.shyukahn.tutorial.item.ModItemGroup
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
@@ -14,6 +15,7 @@ object ModBlocks {
 
     private val RUBY_ORE = Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool())
     private val RUBY_BLOCK = Block(FabricBlockSettings.of(Material.STONE).strength(6.0f).requiresTool())
+    private val STATUS_BLOCK = StatusBlock(FabricBlockSettings.of(Material.STONE).strength(6.0f).requiresTool())
 
     private fun registerBlock(name: String, block: Block) {
         registerBlockItem(name, block)
@@ -30,5 +32,6 @@ object ModBlocks {
 
         registerBlock("ruby_ore", RUBY_ORE)
         registerBlock("ruby_block", RUBY_BLOCK)
+        registerBlock("status_block", STATUS_BLOCK)
     }
 }
