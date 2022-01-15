@@ -15,6 +15,7 @@ object ModItems {
         .food(FoodComponent.Builder().hunger(2).saturationModifier(0.2f).build())
         .group(ModItemGroup.RUBY))
     val DOWSING_ROD = DowsingRodItem(FabricItemSettings().group(ModItemGroup.RUBY).maxDamage(10))
+    val IRON_WOOL = Item(FabricItemSettings().group(ModItemGroup.RUBY))
 
     private fun registerItem(name: String, item: Item) {
         Registry.register(Registry.ITEM, Identifier(Tutorial.MOD_ID, name), item)
@@ -26,5 +27,6 @@ object ModItems {
         registerItem("ruby", RUBY)
         registerItem("pepper", PEPPER)
         registerItem("dowsing_rod", DOWSING_ROD)
+        registerItem("iron_wool", IRON_WOOL)
     }
 }
