@@ -1,7 +1,7 @@
 package com.shyukahn.tutorial.item.custom
 
+import com.shyukahn.tutorial.util.ModTags
 import net.minecraft.block.Block
-import net.minecraft.block.Blocks
 import net.minecraft.client.gui.screen.Screen
 import net.minecraft.client.item.TooltipContext
 import net.minecraft.entity.player.PlayerEntity
@@ -61,8 +61,7 @@ class DowsingRodItem(settings: Settings) : Item(settings) {
     }
 
     private fun isValuableBlock(block: Block): Boolean {
-        return block == Blocks.COAL_ORE || block == Blocks.COPPER_ORE
-                || block == Blocks.DIAMOND_ORE || block == Blocks.IRON_ORE
+        return block.defaultState.isIn(ModTags.Blocks.VALUABLE_BLOCKS)
     }
 
     private fun outputValuableCoordinates(blockFound: Block, pos: BlockPos, player: PlayerEntity) {
