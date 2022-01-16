@@ -8,6 +8,8 @@
   "block.tutorial.ruby_block": "Ruby Block",
   "block.tutorial.ruby_slab": "Ruby Slab",
   "block.tutorial.ruby_stairs": "Ruby Stairs",
+  "block.tutorial.ruby_fence": "Ruby Fence",
+  "block.tutorial.ruby_fence_gate": "Ruby Fence Gate",
   "block.tutorial.status_block": "Status Block",
 
   "itemGroup.tutorial.ruby": "Ruby Mod",

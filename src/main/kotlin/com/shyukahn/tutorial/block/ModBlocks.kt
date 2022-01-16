@@ -27,6 +27,12 @@ object ModBlocks {
     val RUBY_SLAB = registerBlock("ruby_slab",
         SlabBlock(FabricBlockSettings.of(Material.STONE).strength(6.0f).requiresTool()))
 
+    val RUBY_FENCE = registerBlock("ruby_fence",
+        FenceBlock(FabricBlockSettings.of(Material.STONE).strength(6.0f).requiresTool()))
+
+    val RUBY_FENCE_GATE = registerBlock("ruby_fence_gate",
+        FenceGateBlock(FabricBlockSettings.of(Material.STONE).strength(6.0f).requiresTool()))
+
     val STATUS_BLOCK = registerBlock("status_block",
         StatusBlock(FabricBlockSettings.of(Material.STONE).strength(6.0f).requiresTool()))
 

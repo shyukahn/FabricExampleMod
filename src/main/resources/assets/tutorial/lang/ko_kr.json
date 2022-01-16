@@ -8,6 +8,8 @@
   "block.tutorial.ruby_block": "루비 블록",
   "block.tutorial.ruby_slab": "루비 반블록",
   "block.tutorial.ruby_stairs": "루비 계단",
+  "block.tutorial.ruby_fence": "루비 울타리",
+  "block.tutorial.ruby_fence_gate": "루비 울타리 문",
   "block.tutorial.status_block": "상태 블록",
 
   "itemGroup.tutorial.ruby": "루비 모드",
