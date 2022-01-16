@@ -6,6 +6,8 @@
 
   "block.tutorial.ruby_ore": "루비 광석",
   "block.tutorial.ruby_block": "루비 블록",
+  "block.tutorial.ruby_slab": "루비 반블록",
+  "block.tutorial.ruby_stairs": "루비 계단",
   "block.tutorial.status_block": "상태 블록",
 
   "itemGroup.tutorial.ruby": "루비 모드",

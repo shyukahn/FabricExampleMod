@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "tutorial:ruby_ore",
-    "tutorial:ruby_block"
+    "tutorial:ruby_block",
+    "tutorial:ruby_slab",
+    "tutorial:ruby_stairs"
   ]
 }

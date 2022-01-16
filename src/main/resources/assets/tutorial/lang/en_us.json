@@ -6,6 +6,8 @@
 
   "block.tutorial.ruby_ore": "Ruby Ore",
   "block.tutorial.ruby_block": "Ruby Block",
+  "block.tutorial.ruby_slab": "Ruby Slab",
+  "block.tutorial.ruby_stairs": "Ruby Stairs",
   "block.tutorial.status_block": "Status Block",
 
   "itemGroup.tutorial.ruby": "Ruby Mod",
