@@ -8,6 +8,8 @@
     "tutorial:ruby_fence",
     "tutorial:ruby_fence_gate",
     "tutorial:ruby_button",
-    "tutorial:ruby_pressure_plate"
+    "tutorial:ruby_pressure_plate",
+    "tutorial:ruby_door",
+    "tutorial:ruby_trapdoor"
   ]
 }
