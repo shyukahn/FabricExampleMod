@@ -6,6 +6,8 @@
     "tutorial:ruby_slab",
     "tutorial:ruby_stairs",
     "tutorial:ruby_fence",
-    "tutorial:ruby_fence_gate"
+    "tutorial:ruby_fence_gate",
+    "tutorial:ruby_button",
+    "tutorial:ruby_pressure_plate"
   ]
 }

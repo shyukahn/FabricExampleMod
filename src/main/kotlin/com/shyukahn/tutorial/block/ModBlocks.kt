@@ -1,7 +1,9 @@
 package com.shyukahn.tutorial.block
 
 import com.shyukahn.tutorial.Tutorial
+import com.shyukahn.tutorial.block.custom.ModPressurePlateBlock
 import com.shyukahn.tutorial.block.custom.ModStairsBlock
+import com.shyukahn.tutorial.block.custom.ModStoneButtonBlock
 import com.shyukahn.tutorial.block.custom.StatusBlock
 import com.shyukahn.tutorial.item.ModItemGroup
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
@@ -32,6 +34,13 @@ object ModBlocks {
 
     val RUBY_FENCE_GATE = registerBlock("ruby_fence_gate",
         FenceGateBlock(FabricBlockSettings.of(Material.STONE).strength(6.0f).requiresTool()))
+
+    val RUBY_BUTTON = registerBlock("ruby_button",
+        ModStoneButtonBlock(FabricBlockSettings.of(Material.STONE).strength(6.0f).requiresTool()))
+
+    val RUBY_PRESSURE_PLATE = registerBlock("ruby_pressure_plate",
+        ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+            FabricBlockSettings.of(Material.STONE).strength(6.0f).requiresTool()))
 
     val STATUS_BLOCK = registerBlock("status_block",
         StatusBlock(FabricBlockSettings.of(Material.STONE).strength(6.0f).requiresTool()))
