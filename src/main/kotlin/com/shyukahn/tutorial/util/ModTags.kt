@@ -11,11 +11,11 @@ object ModTags {
     object Blocks {
         val VALUABLE_BLOCKS = createTag("valuable_blocks")
 
-        private fun createTag(name: String): Tag<Block> {
+        private fun createTag(name: String): Tag.Identified<Block> {
             return TagFactory.BLOCK.create(Identifier(Tutorial.MOD_ID, name))
         }
 
-        private fun createCommonTag(name: String): Tag<Block> {
+        private fun createCommonTag(name: String): Tag.Identified<Block> {
             return TagFactory.BLOCK.create(Identifier("c", name))
         }
     }
@@ -24,11 +24,11 @@ object ModTags {
         val GEMS = createCommonTag("gems")
         val RUBIES = createCommonTag("rubies")
 
-        private fun createTag(name: String): Tag<Item> {
+        private fun createTag(name: String): Tag.Identified<Item> {
             return TagFactory.ITEM.create(Identifier(Tutorial.MOD_ID, name))
         }
 
-        private fun createCommonTag(name: String): Tag<Item> {
+        private fun createCommonTag(name: String): Tag.Identified<Item> {
             return TagFactory.ITEM.create(Identifier("c", name))
         }
     }
