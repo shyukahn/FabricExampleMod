@@ -4,6 +4,8 @@
     "tutorial:ruby_ore",
     "tutorial:ruby_block",
     "tutorial:ruby_slab",
-    "tutorial:ruby_stairs"
+    "tutorial:ruby_stairs",
+    "tutorial:ruby_fence",
+    "tutorial:ruby_fence_gate"
   ]
 }
