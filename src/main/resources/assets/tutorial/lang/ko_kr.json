@@ -3,6 +3,11 @@
   "item.tutorial.pepper": "고추",
   "item.tutorial.dowsing_rod": "다우징 로드",
   "item.tutorial.iron_wool": "철솜",
+  "item.tutorial.ruby_axe": "루비 도끼",
+  "item.tutorial.ruby_hoe": "루비 괭이",
+  "item.tutorial.ruby_pickaxe": "루비 곡괭이",
+  "item.tutorial.ruby_shovel": "루비 삽",
+  "item.tutorial.ruby_sword": "루비 검",
 
   "block.tutorial.ruby_ore": "루비 광석",
   "block.tutorial.ruby_block": "루비 블록",

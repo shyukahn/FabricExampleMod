@@ -3,6 +3,11 @@
   "item.tutorial.pepper": "Pepper",
   "item.tutorial.dowsing_rod": "Dowsing Rod",
   "item.tutorial.iron_wool": "Iron Wool",
+  "item.tutorial.ruby_axe": "Ruby Axe",
+  "item.tutorial.ruby_hoe": "Ruby Hoe",
+  "item.tutorial.ruby_pickaxe": "Ruby Pickaxe",
+  "item.tutorial.ruby_shovel": "Ruby Shovel",
+  "item.tutorial.ruby_sword": "Ruby Sword",
 
   "block.tutorial.ruby_ore": "Ruby Ore",
   "block.tutorial.ruby_block": "Ruby Block",
