@@ -59,6 +59,10 @@ object ModItems {
         ArmorItem(ModArmorMaterial.RUBY, EquipmentSlot.FEET,
             FabricItemSettings().group(ModItemGroup.RUBY)))
 
+    val RUBY_HORSE_ARMOR = registerItem("ruby_horse_armor",
+        HorseArmorItem(9, "ruby",
+            FabricItemSettings().group(ModItemGroup.RUBY)))
+
     private fun registerItem(name: String, item: Item): Item {
         return Registry.register(Registry.ITEM, Identifier(Tutorial.MOD_ID, name), item)
     }
