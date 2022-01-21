@@ -1,10 +1,7 @@
 package com.shyukahn.tutorial.item
 
 import com.shyukahn.tutorial.Tutorial
-import com.shyukahn.tutorial.item.custom.DowsingRodItem
-import com.shyukahn.tutorial.item.custom.ModAxeItem
-import com.shyukahn.tutorial.item.custom.ModHoeItem
-import com.shyukahn.tutorial.item.custom.ModPickaxeItem
+import com.shyukahn.tutorial.item.custom.*
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.minecraft.entity.EquipmentSlot
 import net.minecraft.item.*
@@ -47,7 +44,7 @@ object ModItems {
             FabricItemSettings().group(ModItemGroup.RUBY)))
 
     val RUBY_HELMET = registerItem("ruby_helmet",
-        ArmorItem(ModArmorMaterial.RUBY, EquipmentSlot.HEAD,
+        ModArmorItem(ModArmorMaterial.RUBY, EquipmentSlot.HEAD,
             FabricItemSettings().group(ModItemGroup.RUBY)))
 
     val RUBY_CHESTPLATE = registerItem("ruby_chestplate",
