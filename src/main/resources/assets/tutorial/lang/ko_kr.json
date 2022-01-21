@@ -8,6 +8,10 @@
   "item.tutorial.ruby_pickaxe": "루비 곡괭이",
   "item.tutorial.ruby_shovel": "루비 삽",
   "item.tutorial.ruby_sword": "루비 검",
+  "item.tutorial.ruby_helmet": "루비 투구",
+  "item.tutorial.ruby_chestplate": "루비 흉갑",
+  "item.tutorial.ruby_leggings": "루비 레깅스",
+  "item.tutorial.ruby_boots": "루비 부츠",
 
   "block.tutorial.ruby_ore": "루비 광석",
   "block.tutorial.ruby_block": "루비 블록",

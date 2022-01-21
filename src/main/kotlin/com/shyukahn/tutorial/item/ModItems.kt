@@ -6,10 +6,8 @@ import com.shyukahn.tutorial.item.custom.ModAxeItem
 import com.shyukahn.tutorial.item.custom.ModHoeItem
 import com.shyukahn.tutorial.item.custom.ModPickaxeItem
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
-import net.minecraft.item.FoodComponent
-import net.minecraft.item.Item
-import net.minecraft.item.ShovelItem
-import net.minecraft.item.SwordItem
+import net.minecraft.entity.EquipmentSlot
+import net.minecraft.item.*
 import net.minecraft.util.Identifier
 import net.minecraft.util.registry.Registry
 
@@ -46,6 +44,22 @@ object ModItems {
 
     val RUBY_HOE = registerItem("ruby_hoe",
         ModHoeItem(ModToolMaterial.RUBY, -2, -1.0f,
+            FabricItemSettings().group(ModItemGroup.RUBY)))
+
+    val RUBY_HELMET = registerItem("ruby_helmet",
+        ArmorItem(ModArmorMaterial.RUBY, EquipmentSlot.HEAD,
+            FabricItemSettings().group(ModItemGroup.RUBY)))
+
+    val RUBY_CHESTPLATE = registerItem("ruby_chestplate",
+        ArmorItem(ModArmorMaterial.RUBY, EquipmentSlot.CHEST,
+            FabricItemSettings().group(ModItemGroup.RUBY)))
+
+    val RUBY_LEGGINGS = registerItem("ruby_leggings",
+        ArmorItem(ModArmorMaterial.RUBY, EquipmentSlot.LEGS,
+            FabricItemSettings().group(ModItemGroup.RUBY)))
+
+    val RUBY_BOOTS = registerItem("ruby_boots",
+        ArmorItem(ModArmorMaterial.RUBY, EquipmentSlot.FEET,
             FabricItemSettings().group(ModItemGroup.RUBY)))
 
     private fun registerItem(name: String, item: Item): Item {

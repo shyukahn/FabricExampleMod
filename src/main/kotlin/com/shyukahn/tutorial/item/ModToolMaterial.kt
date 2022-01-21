@@ -39,5 +39,5 @@ enum class ModToolMaterial(
     override fun getMiningSpeedMultiplier() = miningSpeed
     override fun getAttackDamage() = attackDamage
     override fun getEnchantability() = enchantability
-    override fun getRepairIngredient():  Ingredient = repairIngredient.get()
+    override fun getRepairIngredient(): Ingredient = repairIngredient.get()
 }
