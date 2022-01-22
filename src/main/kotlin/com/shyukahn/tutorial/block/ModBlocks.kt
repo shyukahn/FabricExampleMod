@@ -51,6 +51,9 @@ object ModBlocks {
     val TEST_BLOCK = registerBlock("test_block",
         TestBlock(FabricBlockSettings.of(Material.STONE).strength(6.0f).requiresTool()))
 
+    val DICE_BLOCK = registerBlock("dice_block",
+        Block(FabricBlockSettings.of(Material.STONE).strength(6.0f).requiresTool()))
+
     private fun registerBlock(name: String, block: Block): Block {
         registerBlockItem(name, block)
         return Registry.register(Registry.BLOCK, Identifier(Tutorial.MOD_ID, name), block)
