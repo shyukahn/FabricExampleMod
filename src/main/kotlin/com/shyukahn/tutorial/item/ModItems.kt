@@ -63,6 +63,9 @@ object ModItems {
         HorseArmorItem(9, "ruby",
             FabricItemSettings().group(ModItemGroup.RUBY)))
 
+    val DATA_TABLET = registerItem("data_tablet",
+        DataTabletItem(FabricItemSettings().maxCount(1).group(ModItemGroup.RUBY)))
+
     private fun registerItem(name: String, item: Item): Item {
         return Registry.register(Registry.ITEM, Identifier(Tutorial.MOD_ID, name), item)
     }
