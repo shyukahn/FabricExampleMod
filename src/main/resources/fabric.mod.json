@@ -20,6 +20,12 @@
         "adapter": "kotlin",
         "value": "com.shyukahn.tutorial.Tutorial"
       }
+    ],
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "com.shyukahn.tutorial.TutorialClient"
+      }
     ]
   },
   "mixins": [
