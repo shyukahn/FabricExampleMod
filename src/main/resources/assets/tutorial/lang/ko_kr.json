@@ -14,6 +14,7 @@
   "item.tutorial.ruby_boots": "루비 부츠",
   "item.tutorial.ruby_horse_armor": "루비 말 갑옷",
   "item.tutorial.data_tablet": "데이터 태블릿",
+  "item.tutorial.pepper_seeds": "고추 씨앗",
 
   "block.tutorial.ruby_ore": "루비 광석",
   "block.tutorial.ruby_block": "루비 블록",
@@ -28,6 +29,7 @@
   "block.tutorial.status_block": "상태 블록",
   "block.tutorial.test_block": "테스트 블록",
   "block.tutorial.dice_block": "주사위 블록",
+  "block.tutorial.pepper_plant": "고추 식물",
 
   "itemGroup.tutorial.ruby": "루비 모드",
 

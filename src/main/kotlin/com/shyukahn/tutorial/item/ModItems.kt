@@ -1,6 +1,7 @@
 package com.shyukahn.tutorial.item
 
 import com.shyukahn.tutorial.Tutorial
+import com.shyukahn.tutorial.block.ModBlocks
 import com.shyukahn.tutorial.item.custom.*
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.minecraft.entity.EquipmentSlot
@@ -65,6 +66,9 @@ object ModItems {
 
     val DATA_TABLET = registerItem("data_tablet",
         DataTabletItem(FabricItemSettings().maxCount(1).group(ModItemGroup.RUBY)))
+
+    val PEPPER_SEEDS = registerItem("pepper_seeds",
+        AliasedBlockItem(ModBlocks.PEPPER_PLANT, FabricItemSettings().group(ModItemGroup.RUBY)))
 
     private fun registerItem(name: String, item: Item): Item {
         return Registry.register(Registry.ITEM, Identifier(Tutorial.MOD_ID, name), item)

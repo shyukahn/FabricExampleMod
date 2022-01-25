@@ -54,6 +54,13 @@ object ModBlocks {
     val DICE_BLOCK = registerBlock("dice_block",
         Block(FabricBlockSettings.of(Material.STONE).strength(6.0f).requiresTool()))
 
+    val PEPPER_PLANT = registerBlockWithoutBlockItem("pepper_plant",
+        PepperPlantBlock(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque().noCollision()))
+
+    private fun registerBlockWithoutBlockItem(name: String, block: Block): Block {
+        return Registry.register(Registry.BLOCK, Identifier(Tutorial.MOD_ID, name), block)
+    }
+
     private fun registerBlock(name: String, block: Block): Block {
         registerBlockItem(name, block)
         return Registry.register(Registry.BLOCK, Identifier(Tutorial.MOD_ID, name), block)
