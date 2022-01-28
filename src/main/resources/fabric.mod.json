@@ -29,6 +29,7 @@
     ]
   },
   "mixins": [
+    "tutorial.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.12.12",

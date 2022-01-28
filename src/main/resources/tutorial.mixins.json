@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.shyukahn.tutorial.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ModEntityDataSaver"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
