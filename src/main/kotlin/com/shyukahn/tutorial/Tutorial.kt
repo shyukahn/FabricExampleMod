@@ -5,6 +5,7 @@ import com.shyukahn.tutorial.item.ModItems
 import com.shyukahn.tutorial.registries.ModRegistries
 import com.shyukahn.tutorial.util.ModCommandRegister
 import com.shyukahn.tutorial.util.ModEventsRegister
+import com.shyukahn.tutorial.util.ModLootTableModifiers
 import net.fabricmc.api.ModInitializer
 
 @Suppress("UNUSED")
@@ -21,6 +22,8 @@ object Tutorial: ModInitializer {
 
         ModCommandRegister.registerCommands()
         ModEventsRegister.registerEvents()
+
+        ModLootTableModifiers.modifyLootTables()
 
         println("Example mod has been initialized.")
     }
