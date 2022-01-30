@@ -1,6 +1,7 @@
 package com.shyukahn.tutorial.item.custom
 
 import com.shyukahn.tutorial.item.ModItems
+import com.shyukahn.tutorial.sounds.ModSounds
 import com.shyukahn.tutorial.util.ModTags
 import net.minecraft.block.Block
 import net.minecraft.client.gui.screen.Screen
@@ -10,6 +11,7 @@ import net.minecraft.item.Item
 import net.minecraft.item.ItemStack
 import net.minecraft.item.ItemUsageContext
 import net.minecraft.nbt.NbtCompound
+import net.minecraft.sound.SoundCategory
 import net.minecraft.text.LiteralText
 import net.minecraft.text.Text
 import net.minecraft.text.TranslatableText
@@ -36,6 +38,9 @@ class DowsingRodItem(settings: Settings) : Item(settings) {
                         if (hasPlayerEmptyDataTablet(player)) {
                             addNbtToDataTablet(player, positionClicked.add(0, -i, 0), blockBelow)
                         }
+
+                        context.world.playSound(player, positionClicked, ModSounds.SMALL_EXPLOSION,
+                            SoundCategory.AMBIENT, 1f, 1f)
 
                         break
                     }

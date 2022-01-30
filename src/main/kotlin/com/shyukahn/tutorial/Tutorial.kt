@@ -3,6 +3,7 @@ package com.shyukahn.tutorial
 import com.shyukahn.tutorial.block.ModBlocks
 import com.shyukahn.tutorial.item.ModItems
 import com.shyukahn.tutorial.registries.ModRegistries
+import com.shyukahn.tutorial.sounds.ModSounds
 import com.shyukahn.tutorial.util.ModCommandRegister
 import com.shyukahn.tutorial.util.ModEventsRegister
 import com.shyukahn.tutorial.util.ModLootTableModifiers
@@ -24,6 +25,7 @@ object Tutorial: ModInitializer {
         ModEventsRegister.registerEvents()
 
         ModLootTableModifiers.modifyLootTables()
+        ModSounds.registerSounds()
 
         println("Example mod has been initialized.")
     }

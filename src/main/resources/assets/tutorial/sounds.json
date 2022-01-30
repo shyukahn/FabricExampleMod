@@ -1,0 +1,8 @@
+{
+  "small_explosion": {
+    "subtitle": "tutorial.small_explosion",
+    "sounds": [
+      "tutorial:small_explosion"
+    ]
+  }
+}
