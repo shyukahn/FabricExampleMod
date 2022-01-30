@@ -6,6 +6,7 @@ import com.shyukahn.tutorial.item.ModItemGroup
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.minecraft.block.*
+import net.minecraft.entity.effect.StatusEffects
 import net.minecraft.item.BlockItem
 import net.minecraft.item.Item
 import net.minecraft.util.Identifier
@@ -56,6 +57,9 @@ object ModBlocks {
 
     val PEPPER_PLANT = registerBlockWithoutBlockItem("pepper_plant",
         PepperPlantBlock(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque().noCollision()))
+
+    val BLUEBELLS = registerBlock("bluebells",
+        FlowerBlock(StatusEffects.DOLPHINS_GRACE, 200, FabricBlockSettings.copy(Blocks.DANDELION)))
 
     private fun registerBlockWithoutBlockItem(name: String, block: Block): Block {
         return Registry.register(Registry.BLOCK, Identifier(Tutorial.MOD_ID, name), block)
