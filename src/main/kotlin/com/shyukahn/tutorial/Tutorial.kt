@@ -1,6 +1,7 @@
 package com.shyukahn.tutorial
 
 import com.shyukahn.tutorial.block.ModBlocks
+import com.shyukahn.tutorial.enchantments.ModEnchantments
 import com.shyukahn.tutorial.item.ModItems
 import com.shyukahn.tutorial.registries.ModRegistries
 import com.shyukahn.tutorial.sounds.ModSounds
@@ -26,6 +27,8 @@ object Tutorial: ModInitializer {
 
         ModLootTableModifiers.modifyLootTables()
         ModSounds.registerSounds()
+
+        ModEnchantments.registerModEnchantments()
 
         println("Example mod has been initialized.")
     }

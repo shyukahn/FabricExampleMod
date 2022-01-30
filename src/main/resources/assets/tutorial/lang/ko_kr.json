@@ -34,5 +34,7 @@
   "itemGroup.tutorial.ruby": "루비 모드",
 
   "tooltip.tutorial.dowsing_rod": "§eSHIFT§r를 눌러 더 많은 정보를 확인하세요!",
-  "tooltip.tutorial.dowsing_rod_shift": "블록을 클릭하여 아래에 있는 값진 블록을 확인해보세요!"
+  "tooltip.tutorial.dowsing_rod_shift": "블록을 클릭하여 아래에 있는 값진 블록을 확인해보세요!",
+
+  "enchantment.tutorial.lightning_striker": "번개 소환"
 }
