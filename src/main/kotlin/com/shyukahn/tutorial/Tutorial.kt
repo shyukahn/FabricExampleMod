@@ -21,6 +21,7 @@ object Tutorial: ModInitializer {
         ModBlocks.registerModBlocks()
 
         ModRegistries.registerModFuels()
+        ModRegistries.registerStrippables()
 
         ModCommandRegister.registerCommands()
         ModEventsRegister.registerEvents()

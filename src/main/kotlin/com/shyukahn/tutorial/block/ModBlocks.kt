@@ -61,6 +61,21 @@ object ModBlocks {
     val BLUEBELLS = registerBlock("bluebells",
         FlowerBlock(StatusEffects.DOLPHINS_GRACE, 200, FabricBlockSettings.copy(Blocks.DANDELION)))
 
+    val REDWOOD_LOG = registerBlock("redwood_log",
+        PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)))
+
+    val REDWOOD_WOOD = registerBlock("redwood_wood",
+        PillarBlock(FabricBlockSettings.copy(Blocks.OAK_WOOD)))
+
+    val STRIPPED_REDWOOD_LOG = registerBlock("stripped_redwood_log",
+        PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_LOG)))
+
+    val STRIPPED_REDWOOD_WOOD = registerBlock("stripped_redwood_wood",
+        PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD)))
+
+    val REDWOOD_PLANKS = registerBlock("redwood_planks",
+        Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)))
+
     private fun registerBlockWithoutBlockItem(name: String, block: Block): Block {
         return Registry.register(Registry.BLOCK, Identifier(Tutorial.MOD_ID, name), block)
     }

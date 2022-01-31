@@ -31,6 +31,11 @@
   "block.tutorial.dice_block": "주사위 블록",
   "block.tutorial.pepper_plant": "고추 식물",
   "block.tutorial.bluebells": "블루벨",
+  "block.tutorial.redwood_log": "미국 삼나무 원목",
+  "block.tutorial.redwood_planks": "미국 삼나무 판자",
+  "block.tutorial.redwood_wood": "미국 삼나무",
+  "block.tutorial.stripped_redwood_log": "껍질 벗긴 미국 삼나무 원목",
+  "block.tutorial.stripped_redwood_wood": "껍질 벗긴 미국 삼나무",
 
   "itemGroup.tutorial.ruby": "루비 모드",
 

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "tutorial:redwood_log",
+    "tutorial:redwood_wood",
+    "tutorial:stripped_redwood_log",
+    "tutorial:stripped_redwood_wood",
+    "tutorial:redwood_planks"
+  ]
+}
