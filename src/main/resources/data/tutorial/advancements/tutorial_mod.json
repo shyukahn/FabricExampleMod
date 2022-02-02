@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "tutorial:ruby"
+    },
+    "title": "Tutorial Mod",
+    "description": "The Power lies in the Ruby!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "tutorial:textures/block/ruby_block.png"
+  },
+  "criteria": {
+    "ruby": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tutorial:ruby"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

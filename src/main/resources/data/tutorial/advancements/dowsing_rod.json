@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "tutorial:dowsing_rod"
+    },
+    "title": "Dowsing Rod",
+    "description": "If it doesn't work, the Rod doesn't like you!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "tutorial:tutorial_mod",
+  "criteria": {
+    "dowsing_rod": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tutorial:dowsing_rod"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
