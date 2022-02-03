@@ -76,6 +76,9 @@ object ModBlocks {
     val REDWOOD_PLANKS = registerBlock("redwood_planks",
         Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)))
 
+    val LIGHTNING_CHANNELER_BLOCK = registerBlock("lightning_channeler",
+        LightningChannelerBlock(FabricBlockSettings.of(Material.METAL)))
+
     private fun registerBlockWithoutBlockItem(name: String, block: Block): Block {
         return Registry.register(Registry.BLOCK, Identifier(Tutorial.MOD_ID, name), block)
     }
