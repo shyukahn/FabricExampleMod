@@ -3,6 +3,7 @@ package com.shyukahn.tutorial
 import com.shyukahn.tutorial.block.ModBlocks
 import com.shyukahn.tutorial.enchantments.ModEnchantments
 import com.shyukahn.tutorial.item.ModItems
+import com.shyukahn.tutorial.recipe.ModRecipes
 import com.shyukahn.tutorial.registries.ModRegistries
 import com.shyukahn.tutorial.sounds.ModSounds
 import com.shyukahn.tutorial.util.ModCommandRegister
@@ -25,6 +26,8 @@ object Tutorial: ModInitializer {
 
         ModCommandRegister.registerCommands()
         ModEventsRegister.registerEvents()
+
+        ModRecipes.register()
 
         ModLootTableModifiers.modifyLootTables()
         ModSounds.registerSounds()

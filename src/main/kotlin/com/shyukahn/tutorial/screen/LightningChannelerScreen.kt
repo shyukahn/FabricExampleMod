@@ -34,6 +34,11 @@ class LightningChannelerScreen(handler: LightningChannelerScreenHandler, invento
         if (handler.isLightningStorm()) {
             this.drawTexture(matrices, x + 26, y + 31, 176, 0, 28, 36)
         }
+
+        if (handler.isCrafting()) {
+            val progress = handler.getScaledProgress()
+            this.drawTexture(matrices, x + 98, y + 37, 176, 37, progress, 24)
+        }
     }
 
     override fun render(matrices: MatrixStack, mouseX: Int, mouseY: Int, delta: Float) {

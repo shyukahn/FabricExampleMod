@@ -5,12 +5,18 @@ import net.minecraft.entity.player.PlayerInventory
 import net.minecraft.inventory.Inventory
 import net.minecraft.inventory.SimpleInventory
 import net.minecraft.item.ItemStack
+import net.minecraft.screen.ArrayPropertyDelegate
+import net.minecraft.screen.PropertyDelegate
 import net.minecraft.screen.ScreenHandler
 import net.minecraft.screen.slot.Slot
 import net.minecraft.world.World
 
-class LightningChannelerScreenHandler(syncId: Int, playerInventory: PlayerInventory, private val inventory: Inventory)
-    : ScreenHandler(ModScreenHandlers.LIGHTNING_CHANNELER_SCREEN_HANDLER, syncId) {
+class LightningChannelerScreenHandler(
+    syncId: Int,
+    playerInventory: PlayerInventory,
+    private val inventory: Inventory,
+    private val propertyDelegate: PropertyDelegate
+    ) : ScreenHandler(ModScreenHandlers.LIGHTNING_CHANNELER_SCREEN_HANDLER, syncId) {
 
     private val world: World = playerInventory.player.world
 
@@ -25,9 +31,27 @@ class LightningChannelerScreenHandler(syncId: Int, playerInventory: PlayerInvent
 
         addPlayerInventory(playerInventory)
         addPlayerHotbar(playerInventory)
+        addProperties(propertyDelegate)
     }
 
-    constructor(syncId: Int, playerInventory: PlayerInventory) : this(syncId, playerInventory, SimpleInventory(3))
+    constructor(syncId: Int, playerInventory: PlayerInventory)
+            : this(syncId, playerInventory, SimpleInventory(3), ArrayPropertyDelegate(2))
+
+    fun isCrafting(): Boolean {
+        return propertyDelegate[0] > 0
+    }
+
+    fun getScaledProgress(): Int {
+        val progress = this.propertyDelegate[0]
+        val maxProgress = this.propertyDelegate[1] // Max Progress
+        val progressArrowSize = 21 // This is the width in pixels of your arrow
+
+        return if (maxProgress != 0 && progress != 0) {
+            progress * progressArrowSize / maxProgress
+        } else {
+            0
+        }
+    }
 
     fun isLightningStorm(): Boolean {
         return world.isThundering

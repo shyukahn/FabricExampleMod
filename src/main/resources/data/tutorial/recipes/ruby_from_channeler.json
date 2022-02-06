@@ -1,0 +1,15 @@
+{
+  "type": "tutorial:lightning",
+  "weather": "thundering",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_pane"
+    },
+    {
+      "item": "tutorial:pepper"
+    }
+  ],
+  "output": {
+    "item": "tutorial:ruby"
+  }
+}
